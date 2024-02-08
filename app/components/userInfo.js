@@ -3,7 +3,7 @@ import React from "react";
 
 const UserInfo = () => {
   return (
-    <div className="bg-black text-white p-6">
+    <div className="bg-black text-white p-6 col-span-1">
       <div className="flex justify-between mb-6">
         <div className="flex gap-2">
           <div className="w-10 h-10 relative overflow-hidden">
@@ -88,7 +88,9 @@ const UserInfo = () => {
                   <Image fill src="/song4.jpg" alt="home-icon" className="" />
                 </div>
                 <div className="flex flex-col gap-1 my-auto">
-                  <h4 className="text-white text-xs font-bold">Philip's</h4>
+                  <h4 className="text-white text-xs font-bold">
+                    Philip&apos;s
+                  </h4>
                   <h6 className="text-xxs text-white font-thin">
                     Heasham Abdul
                   </h6>
@@ -165,7 +167,9 @@ const UserInfo = () => {
                   <Image fill src="/song4.jpg" alt="home-icon" className="" />
                 </div>
                 <div className="flex flex-col gap-1 my-auto">
-                  <h4 className="text-white text-xs font-bold">Philip's</h4>
+                  <h4 className="text-white text-xs font-bold">
+                    Philip&apos;s
+                  </h4>
                   <h6 className="text-xxs text-white font-thin">
                     Heasham Abdul
                   </h6>
