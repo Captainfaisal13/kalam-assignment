@@ -14,10 +14,10 @@ const NavigationBar = () => {
       </div>
 
       <div className="pl-2 flex flex-col gap-8">
-        <div className="flex flex-col gap-4">
-          <h3 className="text-xs text-[#4b4b56] font-bold">FEATURES</h3>
+        <div className="flex flex-col gap-2">
+          <h3 className="text-xxs text-[#4b4b56] font-bold">FEATURES</h3>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-3">
             <div className="flex gap-2">
               <div className="">
                 <Image
@@ -39,7 +39,7 @@ const NavigationBar = () => {
                   alt="discover-icon"
                 />
               </div>
-              <h4 className="text-[#0361D6]">Discover</h4>
+              <h4 className="text-[#A0A4AB]">Discover</h4>
             </div>
             <div className="flex gap-2">
               <div>
@@ -50,13 +50,13 @@ const NavigationBar = () => {
                   alt="collection-icon"
                 />
               </div>
-              <h4 className="text-[#0361D6]">Collections</h4>
+              <h4 className="text-[#A0A4AB]">Collections</h4>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col gap-4">
-          <h3 className="text-xs text-[#4b4b56] font-bold">LIBRARY</h3>
+        <div className="flex flex-col gap-3">
+          <h3 className="text-xxs text-[#4b4b56] font-bold">LIBRARY</h3>
           <div className="flex flex-col gap-2">
             <div className="flex gap-2">
               <div>
@@ -67,7 +67,7 @@ const NavigationBar = () => {
                   alt="downlaod-icon"
                 />
               </div>
-              <h4 className="text-[#0361D6]">Download</h4>
+              <h4 className="text-[#A0A4AB]">Download</h4>
             </div>
             <div className="flex gap-2">
               <div>
@@ -78,7 +78,7 @@ const NavigationBar = () => {
                   alt="heart-icon"
                 />
               </div>
-              <h4 className="text-[#0361D6]">Favorites</h4>
+              <h4 className="text-[#A0A4AB]">Favorites</h4>
             </div>
             <div className="flex gap-2">
               <div>
@@ -89,7 +89,7 @@ const NavigationBar = () => {
                   alt="files-icon"
                 />
               </div>
-              <h4 className="text-[#0361D6]">Local Files</h4>
+              <h4 className="text-[#A0A4AB]">Local Files</h4>
             </div>
           </div>
         </div>

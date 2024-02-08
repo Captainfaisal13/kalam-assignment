@@ -4,7 +4,7 @@ import React from "react";
 const UserInfo = () => {
   return (
     <div className="bg-black text-white p-6">
-      <div className="flex justify-between mb-12">
+      <div className="flex justify-between mb-6">
         <div className="flex gap-2">
           <div className="w-10 h-10 relative overflow-hidden">
             <Image
@@ -23,92 +23,165 @@ const UserInfo = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 mb-6">
         <div className="flex flex-col gap-4">
           <div className="flex justify-between">
             <h3 className="text-md font-bold">Recently Played</h3>
+            <h5 className="text-xs my-auto text-[#A0A4AB] font-bold">
+              See all
+            </h5>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <div className="flex justify-between">
+              <div className="flex gap-2">
+                <div className="relative w-10 h-10">
+                  <Image fill src="/song1.jpg" alt="home-icon" className="" />
+                </div>
+                <div className="flex flex-col gap-1 my-auto">
+                  <h4 className="text-white text-xs font-bold">Confessions</h4>
+                  <h6 className="text-xxs text-white font-thin">Usher</h6>
+                </div>
+              </div>
+              <div className="my-auto">
+                <h6 className="text-xxs text-[#A0A4AB]">4 min ago</h6>
+              </div>
+            </div>
+
+            <div className="flex justify-between">
+              <div className="flex gap-2">
+                <div className="relative w-10 h-10">
+                  <Image fill src="/song2.jpg" alt="home-icon" className="" />
+                </div>
+                <div className="flex flex-col gap-1 my-auto">
+                  <h4 className="text-white text-xs font-bold">Chobar</h4>
+                  <h6 className="text-xxs text-white font-thin">
+                    Arjan Dhillon, Mxrci
+                  </h6>
+                </div>
+              </div>
+              <div className="my-auto">
+                <h6 className="text-xxs text-[#A0A4AB]">7 min ago</h6>
+              </div>
+            </div>
+
+            <div className="flex justify-between">
+              <div className="flex gap-2">
+                <div className="relative w-10 h-10">
+                  <Image fill src="/song3.jpg" alt="home-icon" className="" />
+                </div>
+                <div className="flex flex-col gap-1 my-auto">
+                  <h4 className="text-white text-xs font-bold">Licence - EP</h4>
+                  <h6 className="text-xxs text-white font-thin">
+                    Vicky Dhaliwal
+                  </h6>
+                </div>
+              </div>
+              <div className="my-auto">
+                <h6 className="text-xxs text-[#A0A4AB]">1 hr ago</h6>
+              </div>
+            </div>
+
+            <div className="flex justify-between">
+              <div className="flex gap-2">
+                <div className="relative w-10 h-10">
+                  <Image fill src="/song4.jpg" alt="home-icon" className="" />
+                </div>
+                <div className="flex flex-col gap-1 my-auto">
+                  <h4 className="text-white text-xs font-bold">Philip's</h4>
+                  <h6 className="text-xxs text-white font-thin">
+                    Heasham Abdul
+                  </h6>
+                </div>
+              </div>
+              <div className="my-auto">
+                <h6 className="text-xxs text-[#A0A4AB]">2 hr ago</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <div className="flex justify-between">
+            <h3 className="text-md font-bold">My Playlist</h3>
             <h5 className="text-xs my-auto text-[#5c5c6b] font-bold">
               See all
             </h5>
           </div>
 
           <div className="flex flex-col gap-2">
-            <div className="flex gap-2">
-              <div className="">
-                <Image
-                  width="20"
-                  height="20"
-                  src="/home.svg"
-                  alt="home-icon"
-                  className=""
-                />
+            <div className="flex justify-between">
+              <div className="flex gap-2">
+                <div className="relative w-10 h-10">
+                  <Image fill src="/song1.jpg" alt="home-icon" className="" />
+                </div>
+                <div className="flex flex-col gap-1 my-auto">
+                  <h4 className="text-white text-xs font-bold">Confessions</h4>
+                  <h6 className="text-xxs text-white font-thin">Usher</h6>
+                </div>
               </div>
-              <h4 className="text-[#0361D6]">Home</h4>
-            </div>
-            <div className="flex gap-2">
-              <div>
-                <Image
-                  width="20"
-                  height="20"
-                  src="/discover.svg"
-                  alt="discover-icon"
-                />
+              <div className="my-auto">
+                <h6 className="text-xxs text-[#A0A4AB]">2hr 43 min ago</h6>
               </div>
-              <h4 className="text-[#0361D6]">Discover</h4>
             </div>
-            <div className="flex gap-2">
-              <div>
-                <Image
-                  width="20"
-                  height="20"
-                  src="/collection.svg"
-                  alt="collection-icon"
-                />
-              </div>
-              <h4 className="text-[#0361D6]">Collections</h4>
-            </div>
-          </div>
-        </div>
 
-        <div className="flex flex-col gap-4">
-          <h3 className="text-xs text-[#4b4b56] font-bold">LIBRARY</h3>
-          <div className="flex flex-col gap-2">
-            <div className="flex gap-2">
-              <div>
-                <Image
-                  width="20"
-                  height="20"
-                  src="/download.svg"
-                  alt="downlaod-icon"
-                />
+            <div className="flex justify-between">
+              <div className="flex gap-2">
+                <div className="relative w-10 h-10">
+                  <Image fill src="/song2.jpg" alt="home-icon" className="" />
+                </div>
+                <div className="flex flex-col gap-1 my-auto">
+                  <h4 className="text-white text-xs font-bold">Chobar</h4>
+                  <h6 className="text-xxs text-white font-thin">
+                    Arjan Dhillon, Mxrci
+                  </h6>
+                </div>
               </div>
-              <h4 className="text-[#0361D6]">Download</h4>
+              <div className="my-auto">
+                <h6 className="text-xxs text-[#A0A4AB]">7 min ago</h6>
+              </div>
             </div>
-            <div className="flex gap-2">
-              <div>
-                <Image
-                  width="20"
-                  height="20"
-                  src="/heart.svg"
-                  alt="heart-icon"
-                />
+
+            <div className="flex justify-between">
+              <div className="flex gap-2">
+                <div className="relative w-10 h-10">
+                  <Image fill src="/song3.jpg" alt="home-icon" className="" />
+                </div>
+                <div className="flex flex-col gap-1 my-auto">
+                  <h4 className="text-white text-xs font-bold">Licence - EP</h4>
+                  <h6 className="text-xxs text-white font-thin">
+                    Vicky Dhaliwal
+                  </h6>
+                </div>
               </div>
-              <h4 className="text-[#0361D6]">Favorites</h4>
+              <div className="my-auto">
+                <h6 className="text-xxs text-[#A0A4AB]">1 hr ago</h6>
+              </div>
             </div>
-            <div className="flex gap-2">
-              <div>
-                <Image
-                  width="20"
-                  height="20"
-                  src="/files.svg"
-                  alt="files-icon"
-                />
+
+            <div className="flex justify-between">
+              <div className="flex gap-2">
+                <div className="relative w-10 h-10">
+                  <Image fill src="/song4.jpg" alt="home-icon" className="" />
+                </div>
+                <div className="flex flex-col gap-1 my-auto">
+                  <h4 className="text-white text-xs font-bold">Philip's</h4>
+                  <h6 className="text-xxs text-white font-thin">
+                    Heasham Abdul
+                  </h6>
+                </div>
               </div>
-              <h4 className="text-[#0361D6]">Local Files</h4>
+              <div className="my-auto">
+                <h6 className="text-xxs text-[#A0A4AB]">4 min ago</h6>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <button className="py-2 px-8 text-sm bg-[#BEC0C5] w-full rounded-md text-black font-bold">
+        Create New Playlist
+      </button>
     </div>
   );
 };
