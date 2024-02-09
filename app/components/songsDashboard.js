@@ -8,15 +8,44 @@ const recentSongs = [
     singer: "The most played tracks right now",
   },
   {
-    img: "/song4.jpg",
-    name: "Todays Hot Hits",
-    singer: "The most played tracks right now",
+    img: "/song5.jpg",
+    name: "Jaadugarriya-EP",
+    singer: "Jassie Gill",
+  },
+  {
+    img: "/song2.jpg",
+    name: "Chobar",
+    singer: "Arjan Dhillon, Mxrci",
+  },
+  {
+    img: "/song3.jpg",
+    name: "Licence - EP",
+    singer: "Vicky Dhaliwal",
   },
   {
     img: "/song4.jpg",
     name: "Todays Hot Hits",
     singer: "The most played tracks right now",
   },
+];
+
+const newReleases = [
+  {
+    img: "/song5.jpg",
+    name: "Jaadugarriya-EP",
+    singer: "Jassie Gill",
+  },
+  {
+    img: "/song3.jpg",
+    name: "Licence - EP",
+    singer: "Vicky Dhaliwal",
+  },
+  {
+    img: "/song2.jpg",
+    name: "Chobar",
+    singer: "Arjan Dhillon, Mxrci",
+  },
+
   {
     img: "/song4.jpg",
     name: "Todays Hot Hits",
@@ -28,10 +57,39 @@ const recentSongs = [
     singer: "The most played tracks right now",
   },
 ];
+
+const trending = [
+  {
+    img: "/song4.jpg",
+    name: "Todays Hot Hits",
+    singer: "The most played tracks right now",
+  },
+  {
+    img: "/song5.jpg",
+    name: "Jaadugarriya-EP",
+    singer: "Jassie Gill",
+  },
+  {
+    img: "/song2.jpg",
+    name: "Chobar",
+    singer: "Arjan Dhillon, Mxrci",
+  },
+  {
+    img: "/song3.jpg",
+    name: "Licence - EP",
+    singer: "Vicky Dhaliwal",
+  },
+  {
+    img: "/song4.jpg",
+    name: "Todays Hot Hits",
+    singer: "The most played tracks right now",
+  },
+];
+
 const SongsDashboard = () => {
   return (
-    <div className="flex-auto w-full sm:w-4/6 bg-[#18191B] px-4 py-6 sm:px-6 sm:py-6 md:px-8 md:py-8 flex flex-col gap-6">
-      <div className="flex gap-2 md:gap-4 lg:gap-6">
+    <div className="flex-auto w-full sm:w-4/6 bg-[#18191B] px-4 py-4 sm:px-6 sm:py-6 md:px-8 md:py-6 flex flex-col gap-6">
+      <div className="gap-2 md:gap-4 lg:gap-6 hidden sm:flex">
         <div className="flex gap-4 my-auto">
           <div className="w-3 h-3 md:w-4 md:h-4 relative cursor-pointer">
             <Image src="left-arrow.svg" fill alt="left arrow" />
@@ -61,7 +119,7 @@ const SongsDashboard = () => {
       </div>
 
       <div className="w-full h-36 md:h-48 lg:h-64 overflow-hidden relative cursor-pointer">
-        <Image src="/poster.png" fill alt="poster" className="rounded-md" />
+        <Image src="/poster-hd.png" fill alt="poster" className="rounded-md" />
       </div>
 
       <div className="flex flex-col gap-3 md:gap-4">
@@ -97,14 +155,14 @@ const SongsDashboard = () => {
       <div className="flex flex-col gap-3 md:gap-4">
         <div className="flex justify-between">
           <h3 className="text-lg md:text-xl lg:text-2xl text-white font-bold">
-            Recently Played
+            New releases for you
           </h3>
           <h5 className="text-xs my-auto text-[#A0A4AB] font-bold cursor-pointer hover:underline underline-[#A0A4AB]">
             See all
           </h5>
         </div>
         <div className="flex gap-4 overflow-x-scroll">
-          {recentSongs.map(({ img, name, singer }, idx) => {
+          {newReleases.map(({ img, name, singer }, idx) => {
             return (
               <div
                 key={idx}
@@ -127,14 +185,14 @@ const SongsDashboard = () => {
       <div className="flex flex-col gap-3 md:gap-4">
         <div className="flex justify-between">
           <h3 className="text-lg md:text-xl lg:text-2xl text-white font-bold">
-            Recently Played
+            Trending this month
           </h3>
           <h5 className="text-xs my-auto text-[#A0A4AB] font-bold cursor-pointer hover:underline underline-[#A0A4AB]">
             See all
           </h5>
         </div>
         <div className="flex gap-4 overflow-x-scroll">
-          {recentSongs.map(({ img, name, singer }, idx) => {
+          {trending.map(({ img, name, singer }, idx) => {
             return (
               <div
                 key={idx}

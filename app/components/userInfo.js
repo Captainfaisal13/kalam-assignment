@@ -83,9 +83,7 @@ const UserInfo = () => {
                       <h4 className="text-white text-xs font-bold">
                         {song.name}
                       </h4>
-                      <h6 className="text-xxs text-white font-thin">
-                        {song.singer}
-                      </h6>
+                      <h6 className="text-xxs text-[#A0A4AB]">{song.singer}</h6>
                     </div>
                   </div>
                   <div className="my-auto">
@@ -116,9 +114,7 @@ const UserInfo = () => {
                       <h4 className="text-white text-xs font-bold">
                         {song.name}
                       </h4>
-                      <h6 className="text-xxs text-white font-thin">
-                        {song.singer}
-                      </h6>
+                      <h6 className="text-xxs text-[#A0A4AB]">{song.singer}</h6>
                     </div>
                   </div>
                   <div className="my-auto">
