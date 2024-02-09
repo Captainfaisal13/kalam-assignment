@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const PlayerFooter = () => {
+  const [isPlay, setIsPlay] = useState(true);
   return (
     <div className="p-2 sm:p-4 md:p-6 flex">
       <div className="w-44 justify-between hidden sm:flex">
@@ -36,8 +38,16 @@ const PlayerFooter = () => {
               alt="heart-icon"
             />
           </div>
-          <div className="my-auto cursor-pointer">
-            <Image width="30" height="30" src="/pause.svg" alt="heart-icon" />
+          <div
+            className="my-auto cursor-pointer"
+            onClick={() => setIsPlay(!isPlay)}
+          >
+            <Image
+              width="30"
+              height="30"
+              src={isPlay ? "play.svg" : "/pause.svg"}
+              alt="heart-icon"
+            />
           </div>
           <div className="my-auto cursor-pointer">
             <Image width="20" height="20" src="/forward.svg" alt="heart-icon" />
