@@ -74,9 +74,12 @@ const SongsDashboard = () => {
           </h5>
         </div>
         <div className="flex gap-4 overflow-x-scroll">
-          {recentSongs.map(({ img, name, singer }) => {
+          {recentSongs.map(({ img, name, singer }, idx) => {
             return (
-              <div className="flex flex-col gap-1 md:gap-2 cursor-pointer">
+              <div
+                key={idx}
+                className="flex flex-col gap-1 md:gap-2 cursor-pointer"
+              >
                 <div className="relative w-32 h-32 md:w-44 md:h-44 lg:w-56 lg:h-56 overflow-hidden">
                   <Image src={img} fill alt="song" className="rounded-md" />
                 </div>
@@ -101,9 +104,12 @@ const SongsDashboard = () => {
           </h5>
         </div>
         <div className="flex gap-4 overflow-x-scroll">
-          {recentSongs.map(({ img, name, singer }) => {
+          {recentSongs.map(({ img, name, singer }, idx) => {
             return (
-              <div className="flex flex-col gap-1 md:gap-2 cursor-pointer">
+              <div
+                key={idx}
+                className="flex flex-col gap-1 md:gap-2 cursor-pointer"
+              >
                 <div className="relative w-32 h-32 md:w-44 md:h-44 lg:w-56 lg:h-56 overflow-hidden">
                   <Image src={img} fill alt="song" className="rounded-md" />
                 </div>
@@ -128,9 +134,12 @@ const SongsDashboard = () => {
           </h5>
         </div>
         <div className="flex gap-4 overflow-x-scroll">
-          {recentSongs.map(({ img, name, singer }) => {
+          {recentSongs.map(({ img, name, singer }, idx) => {
             return (
-              <div className="flex flex-col gap-1 md:gap-2 cursor-pointer">
+              <div
+                key={idx}
+                className="flex flex-col gap-1 md:gap-2 cursor-pointer"
+              >
                 <div className="relative w-32 h-32 md:w-44 md:h-44 lg:w-56 lg:h-56 overflow-hidden">
                   <Image src={img} fill alt="song" className="rounded-md" />
                 </div>

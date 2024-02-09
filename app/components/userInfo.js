@@ -72,9 +72,9 @@ const UserInfo = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            {recentSongs.map((song) => {
+            {recentSongs.map((song, idx) => {
               return (
-                <div className="flex justify-between cursor-pointer">
+                <div key={idx} className="flex justify-between cursor-pointer">
                   <div className="flex gap-2">
                     <div className="relative w-10 h-10">
                       <Image fill src={song.img} alt={song.img} className="" />
@@ -105,9 +105,9 @@ const UserInfo = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            {recentSongs.map((song) => {
+            {recentSongs.map((song, idx) => {
               return (
-                <div className="flex justify-between cursor-pointer">
+                <div key={idx} className="flex justify-between cursor-pointer">
                   <div className="flex gap-2">
                     <div className="relative w-10 h-10">
                       <Image fill src={song.img} alt={song.img} className="" />
