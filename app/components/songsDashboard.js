@@ -88,7 +88,7 @@ const trending = [
 
 const SongsDashboard = () => {
   return (
-    <div className="flex-auto w-full sm:w-4/6 bg-[#18191B] px-4 py-4 sm:px-6 sm:py-6 md:px-8 md:py-6 flex flex-col gap-6">
+    <div className="flex-auto w-full sm:w-4/6 bg-[#18191B] px-4 pb-24 pt-4 sm:px-6 sm:pb-28 sm:pt-6 md:px-8 md:pb-32 md:pt-6 flex flex-col gap-6">
       <div className="gap-2 md:gap-4 lg:gap-6 hidden sm:flex">
         <div className="flex gap-4 my-auto">
           <div className="w-3 h-3 md:w-4 md:h-4 relative cursor-pointer">
