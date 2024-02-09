@@ -67,7 +67,7 @@ const SongsDashboard = () => {
       <div className="flex flex-col gap-3 md:gap-4">
         <div className="flex justify-between">
           <h3 className="text-lg md:text-xl lg:text-2xl text-white font-bold">
-            Recently Played
+            Hi, Faisal
           </h3>
           <h5 className="text-xs my-auto text-[#A0A4AB] font-bold cursor-pointer hover:underline underline-[#A0A4AB]">
             See all

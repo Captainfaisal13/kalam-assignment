@@ -1,6 +1,33 @@
 import Image from "next/image";
 import React from "react";
 
+const recentSongs = [
+  {
+    img: "/song1.jpg",
+    name: "Confessions",
+    singer: "Usher",
+    time: "4 min ago",
+  },
+  {
+    img: "/song2.jpg",
+    name: "Chobar",
+    singer: "Arjan Dhillon, Mxrci",
+    time: "7 min ago",
+  },
+  {
+    img: "/song3.jpg",
+    name: "Licence - EP",
+    singer: "Vicky Dhaliwal",
+    time: "1 hr ago",
+  },
+  {
+    img: "/song1.jpg",
+    name: "Philips",
+    singer: "Heasham Abdul",
+    time: "2 hr ago",
+  },
+];
+
 const UserInfo = () => {
   return (
     <div className="min-w-72 bg-black text-white p-6 col-span-1 sticky top-0 h-screen hidden xl:block">
@@ -45,152 +72,61 @@ const UserInfo = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <div className="flex justify-between">
-              <div className="flex gap-2">
-                <div className="relative w-10 h-10">
-                  <Image fill src="/song1.jpg" alt="home-icon" className="" />
+            {recentSongs.map((song) => {
+              return (
+                <div className="flex justify-between cursor-pointer">
+                  <div className="flex gap-2">
+                    <div className="relative w-10 h-10">
+                      <Image fill src={song.img} alt={song.img} className="" />
+                    </div>
+                    <div className="flex flex-col gap-1 my-auto">
+                      <h4 className="text-white text-xs font-bold">
+                        {song.name}
+                      </h4>
+                      <h6 className="text-xxs text-white font-thin">
+                        {song.singer}
+                      </h6>
+                    </div>
+                  </div>
+                  <div className="my-auto">
+                    <h6 className="text-xxs text-[#A0A4AB]">{song.time}</h6>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-1 my-auto">
-                  <h4 className="text-white text-xs font-bold">Confessions</h4>
-                  <h6 className="text-xxs text-white font-thin">Usher</h6>
-                </div>
-              </div>
-              <div className="my-auto">
-                <h6 className="text-xxs text-[#A0A4AB]">4 min ago</h6>
-              </div>
-            </div>
-
-            <div className="flex justify-between">
-              <div className="flex gap-2">
-                <div className="relative w-10 h-10">
-                  <Image fill src="/song2.jpg" alt="home-icon" className="" />
-                </div>
-                <div className="flex flex-col gap-1 my-auto">
-                  <h4 className="text-white text-xs font-bold">Chobar</h4>
-                  <h6 className="text-xxs text-white font-thin">
-                    Arjan Dhillon, Mxrci
-                  </h6>
-                </div>
-              </div>
-              <div className="my-auto">
-                <h6 className="text-xxs text-[#A0A4AB]">7 min ago</h6>
-              </div>
-            </div>
-
-            <div className="flex justify-between">
-              <div className="flex gap-2">
-                <div className="relative w-10 h-10">
-                  <Image fill src="/song3.jpg" alt="home-icon" className="" />
-                </div>
-                <div className="flex flex-col gap-1 my-auto">
-                  <h4 className="text-white text-xs font-bold">Licence - EP</h4>
-                  <h6 className="text-xxs text-white font-thin">
-                    Vicky Dhaliwal
-                  </h6>
-                </div>
-              </div>
-              <div className="my-auto">
-                <h6 className="text-xxs text-[#A0A4AB]">1 hr ago</h6>
-              </div>
-            </div>
-
-            <div className="flex justify-between">
-              <div className="flex gap-2">
-                <div className="relative w-10 h-10">
-                  <Image fill src="/song4.jpg" alt="home-icon" className="" />
-                </div>
-                <div className="flex flex-col gap-1 my-auto">
-                  <h4 className="text-white text-xs font-bold">
-                    Philip&apos;s
-                  </h4>
-                  <h6 className="text-xxs text-white font-thin">
-                    Heasham Abdul
-                  </h6>
-                </div>
-              </div>
-              <div className="my-auto">
-                <h6 className="text-xxs text-[#A0A4AB]">2 hr ago</h6>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
-
         <div className="flex flex-col gap-4">
           <div className="flex justify-between">
-            <h3 className="text-md font-bold">My Playlist</h3>
-            <h5 className="text-xs my-auto text-[#5c5c6b] font-bold">
+            <h3 className="text-md font-bold">Recently Played</h3>
+            <h5 className="text-xs my-auto text-[#A0A4AB] font-bold hover:underline underline-[#A0A4AB] cursor-pointer">
               See all
             </h5>
           </div>
 
           <div className="flex flex-col gap-2">
-            <div className="flex justify-between">
-              <div className="flex gap-2">
-                <div className="relative w-10 h-10">
-                  <Image fill src="/song1.jpg" alt="home-icon" className="" />
+            {recentSongs.map((song) => {
+              return (
+                <div className="flex justify-between cursor-pointer">
+                  <div className="flex gap-2">
+                    <div className="relative w-10 h-10">
+                      <Image fill src={song.img} alt={song.img} className="" />
+                    </div>
+                    <div className="flex flex-col gap-1 my-auto">
+                      <h4 className="text-white text-xs font-bold">
+                        {song.name}
+                      </h4>
+                      <h6 className="text-xxs text-white font-thin">
+                        {song.singer}
+                      </h6>
+                    </div>
+                  </div>
+                  <div className="my-auto">
+                    <h6 className="text-xxs text-[#A0A4AB]">{song.time}</h6>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-1 my-auto">
-                  <h4 className="text-white text-xs font-bold">Confessions</h4>
-                  <h6 className="text-xxs text-white font-thin">Usher</h6>
-                </div>
-              </div>
-              <div className="my-auto">
-                <h6 className="text-xxs text-[#A0A4AB]">2hr 43 min ago</h6>
-              </div>
-            </div>
-
-            <div className="flex justify-between">
-              <div className="flex gap-2">
-                <div className="relative w-10 h-10">
-                  <Image fill src="/song2.jpg" alt="home-icon" className="" />
-                </div>
-                <div className="flex flex-col gap-1 my-auto">
-                  <h4 className="text-white text-xs font-bold">Chobar</h4>
-                  <h6 className="text-xxs text-white font-thin">
-                    Arjan Dhillon, Mxrci
-                  </h6>
-                </div>
-              </div>
-              <div className="my-auto">
-                <h6 className="text-xxs text-[#A0A4AB]">7 min ago</h6>
-              </div>
-            </div>
-
-            <div className="flex justify-between">
-              <div className="flex gap-2">
-                <div className="relative w-10 h-10">
-                  <Image fill src="/song3.jpg" alt="home-icon" className="" />
-                </div>
-                <div className="flex flex-col gap-1 my-auto">
-                  <h4 className="text-white text-xs font-bold">Licence - EP</h4>
-                  <h6 className="text-xxs text-white font-thin">
-                    Vicky Dhaliwal
-                  </h6>
-                </div>
-              </div>
-              <div className="my-auto">
-                <h6 className="text-xxs text-[#A0A4AB]">1 hr ago</h6>
-              </div>
-            </div>
-
-            <div className="flex justify-between">
-              <div className="flex gap-2">
-                <div className="relative w-10 h-10">
-                  <Image fill src="/song4.jpg" alt="home-icon" className="" />
-                </div>
-                <div className="flex flex-col gap-1 my-auto">
-                  <h4 className="text-white text-xs font-bold">
-                    Philip&apos;s
-                  </h4>
-                  <h6 className="text-xxs text-white font-thin">
-                    Heasham Abdul
-                  </h6>
-                </div>
-              </div>
-              <div className="my-auto">
-                <h6 className="text-xxs text-[#A0A4AB]">4 min ago</h6>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </div>
