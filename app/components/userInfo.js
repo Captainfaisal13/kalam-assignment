@@ -3,9 +3,9 @@ import React from "react";
 
 const UserInfo = () => {
   return (
-    <div className="bg-black text-white p-6 col-span-1">
+    <div className="min-w-72 bg-black text-white p-6 col-span-1 sticky top-0 h-screen hidden xl:block">
       <div className="flex justify-between mb-6">
-        <div className="flex gap-2">
+        <div className="flex gap-2 cursor-pointer">
           <div className="w-10 h-10 relative overflow-hidden">
             <Image
               src="/profile-pic.jpg"
@@ -18,8 +18,20 @@ const UserInfo = () => {
         </div>
 
         <div className="my-auto flex gap-2">
-          <Image src="/notification.svg" width="20" height="20" alt="logo" />
-          <Image src="/down-arrow.svg" width="20" height="20" alt="logo" />
+          <Image
+            src="/notification.svg"
+            width="20"
+            height="20"
+            alt="logo"
+            className="cursor-pointer"
+          />
+          <Image
+            src="/down-arrow.svg"
+            width="20"
+            height="20"
+            alt="logo"
+            className="cursor-pointer"
+          />
         </div>
       </div>
 
@@ -27,7 +39,7 @@ const UserInfo = () => {
         <div className="flex flex-col gap-4">
           <div className="flex justify-between">
             <h3 className="text-md font-bold">Recently Played</h3>
-            <h5 className="text-xs my-auto text-[#A0A4AB] font-bold">
+            <h5 className="text-xs my-auto text-[#A0A4AB] font-bold hover:underline underline-[#A0A4AB] cursor-pointer">
               See all
             </h5>
           </div>

@@ -7,7 +7,7 @@ import PlayerFooter from "./components/player";
 export default function Home() {
   return (
     <main>
-      <div className="grid grid-cols-6 min-h-screen">
+      <div className="flex flex-col sm:flex-row min-h-screen relative items-start">
         <NavigationBar />
         <SongsDashboard />
         <UserInfo />
